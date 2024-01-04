@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+    http:
+        build: http/
+        restart: unless-stopped
+        ports:
+            - "80:80" 
+    gatekeeper:
+        build:
+            context: gnugk/
+        restart: unless-stopped
+        network_mode: host
+        dns:
+            - 192.168.143.1
+        #ports:
+        #    - "1718-1720:1718-1720" 
+        #    - "7000:7000"
+        #    - "20000-20010:20000-20010"
+    asterisk:
+        build: asterisk 
+        network_mode: host

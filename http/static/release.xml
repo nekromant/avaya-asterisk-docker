@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phone-release>
+<release-header>
+<name>FEBRUARY 2, 2018 16xx R1.3 SP12 GA Release</name>
+<date>2018-02-02</date>
+<description>
+Copyright Avaya Inc. 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 All rights reserved 
+This file describes the contents of the FEBRUARY 2, 2018 software distribution package for the 1616, 1608 and 1603 IP Telephones. 
+
+There is one firmware version with multiple language files in this distribution package. 
+Software distribution packages contains all the files necessary to upgrade Avaya 1616-I, 1608-I, 1603-I, 1603SW-I IP telephones to H.323 Release 1.3120A and all the files necessary to upgrade Avaya 1616, 1608, 1603, 1603SW IP telephones to H.323 Release 1.350B.
+The following files are included in all packages: 
+	16xxupgrade.txt	- This file is downloaded by the Avaya IP telephones and instructs the telephones on how to upgrade itself.
+	This file SHOULD NOT BE EDITED.
+    You MUST USE the 16xxupgrade.txt file included in the package you are loading. 
+    DO NOT MIX files from single and multi-byte packages.
+    System specific parameters should be entered into the 46xxsettings.txt file which is available for separate download at support.avaya.com
+
+To upgrade your Avaya IP Telephones:
+  - Decide which language version and software version to install and download  
+   the appropriate package.
+  - Rename your current 16xxupgrade.txt file.
+  - Unzip the zip or executable file in the outbound file directory of your HTTP server, as appropriate.
+  - Make any adjustments to your 46xxsettings.txt file.
+  - Reset your Avaya IP Telephones.
+</description>
+</release-header>
+<files-in-release>
+<file>
+<name>hb1616ua1_3120A.bin</name>
+<type>boot</type>
+<version>1.3120A</version>
+<description>1616-I R1.3120A SHA1 Signed Boot Code</description>
+</file>
+<file>
+<name>hb1616ua1_3120A_SHA256.bin</name>
+<type>boot</type>
+<version>1.3120A</version>
+<description>1616-I R1.3120A SHA2 Signed Boot Code</description>
+</file>
+<file>
+<name>ha1616ua1_3120A.bin</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1616-I H323 R1.3120A SHA1 Signed Application Code</description>
+</file>
+<file>
+<name>ha1616ua1_3120A_SHA256.bin</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1616-I H323 R1.3120A SHA2 Signed Application Code</description>
+</file>
+<file>
+<name>GBM32_B_1_1_0.hex</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1616 H323 R1.3120A Button Module</description>
+</file>
+<file>
+<name>hb1608ua1_3120A.bin</name>
+<type>boot</type>
+<version>1.3120A</version>
+<description>1608-I R1.3120A SHA1 Signed Boot Code</description>
+</file>
+<file>
+<name>hb1608ua1_3120A_SHA256.bin</name>
+<type>boot</type>
+<version>1.3120A</version>
+<description>1608-I R1.3120A SHA2 Signed Boot Code</description>
+</file>
+<file>
+<name>ha1608ua1_3120A.bin</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1608-I H323 R1.3120A SHA1 Signed Application Code</description>
+</file>
+<file>
+<name>ha1608ua1_3120A_SHA256.bin</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1608-I H323 R1.3120A SHA2 Signed Application Code</description>
+</file>
+<file>
+<name>hb1603ua1_3120A.bin</name>
+<type>boot</type>
+<version>1.3120A</version>
+<description>1603-I/1603SW-I R1.3120A SHA1 Signed Boot Code</description>
+</file>
+<file>
+<name>hb1603ua1_3120A_SHA256.bin</name>
+<type>boot</type>
+<version>1.3120A</version>
+<description>1603-I/1603SW-I R1.3120A SHA2 Signed Boot Code</description>
+</file>
+<file>
+<name>ha1603ua1_3120A.bin</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1603-I/1603SW-I H323 R1.3120A SHA1 Signed Application Code</description>
+</file>
+<file>
+<name>ha1603ua1_3120A_SHA256.bin</name>
+<type>app</type>
+<version>1.3120A</version>
+<description>1603-I/1603SW-I H323 R1.3120A SHA2 Signed Application Code</description>
+</file>
+<file>
+<name>hb1616ua1_350B.bin</name>
+<type>boot</type>
+<version>1.350B</version>
+<description>1616 R1.350B Boot Code</description>
+</file>
+<file>
+<name>ha1616ua1_350B.bin</name>
+<type>app</type>
+<version>1.350B</version>
+<description>1616 H323 R1.350B Application Code</description>
+</file>
+<file>
+<name>hb1608ua1_350B.bin</name>
+<type>boot</type>
+<version>1.350B</version>
+<description>1608 R1.350B Boot Code</description>
+</file>
+<file>
+<name>ha1608ua1_350B.bin</name>
+<type>app</type>
+<version>1.350B</version>
+<description>1608 H323 R1.350B Application Code</description>
+</file>
+<file>
+<name>hb1603ua1_350B.bin</name>
+<type>boot</type>
+<version>1.350B</version>
+<description>1603 R1.350B Boot Code</description>
+</file>
+<file>
+<name>ha1603ua1_350B.bin</name>
+<type>app</type>
+<version>1.350B</version>
+<description>1603 H323 R1.350B Application Code</description>
+</file>
+<file>
+<name>mlf_Sage_v503_korean.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Korean</description>
+</file>
+<file>
+<name>KSC_S11_v35.rbm.lzma</name>
+<type>font</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A font support for Korean</description>
+</file>
+<file>
+<name>mlf_Sage_v503_chinese.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Simplified Chinese</description>
+</file>
+<file>
+<name>GB_S11_v35.rbm.lzma</name>
+<type>font</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A font support for Simplified Chinese</description>
+</file>
+<file>
+<name>mlf_Sage_v503_trad_chinese.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Traditional Chinese</description>
+</file>
+<file>
+<name>Big5_S11_v35.rbm.lzma</name>
+<type>font</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A font support for Traditional Chinese</description>
+</file>
+<file>
+<name>mlf_Sage_v503_hebrew.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Hebrew</description>
+</file>
+<file>
+<name>Hebrew_S11_v35.rbm.lzma</name>
+<type>font</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A font support for Hebrew</description>
+</file>
+<file>
+<name>mlf_Sage_v503_arabic.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Arabic</description>
+</file>
+<file>
+<name>Arabic_S11_v35.rbm.lzma</name>
+<type>font</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A font support for Arabic</description>
+</file>
+<file>
+<name>mlf_Sage_v503_dutch.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Dutch</description>
+</file>
+<file>
+<name>mlf_Sage_v503_french_can.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Canadian French</description>
+</file>
+<file>
+<name>mlf_Sage_v503_french_paris.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Parisian French</description>
+</file>
+<file>
+<name>mlf_Sage_v503_german.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for German</description>
+</file>
+<file>
+<name>mlf_Sage_v503_italian.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Italian</description>
+</file>
+<file>
+<name>mlf_Sage_v503_japaneseKat.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Japanese</description>
+</file>
+<file>
+<name>mlf_Sage_v503_portuguese.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Brazilian Portuguese</description>
+</file>
+<file>
+<name>mlf_Sage_v503_russian.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Russian</description>
+</file>
+<file>
+<name>mlf_Sage_v503_spanish.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Castilian Spanish</description>
+</file>
+<file>
+<name>mlf_Sage_v503_spanish_latin.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Latin American Spanish</description>
+</file>
+<file>
+<name>mlf_Sage_v503_polish.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Polish</description>
+</file>
+<file>
+<name>mlf_Sage_v503_turkish.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Turkish</description>
+</file>
+<file>
+<name>mlf_Sage_v503_czech.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Czech</description>
+</file>
+<file>
+<name>mlf_Sage_v503_hungarian.txt</name>
+<type>lang</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A language support for Hungarian</description>
+</file>
+<file>
+<name>av_prca_pem_2033.txt</name>
+<type>cert</type>
+<version>1.3120A</version>
+<description>16xx H323 R1.3120A Certificate file</description>
+</file>
+</files-in-release>
+<phones>
+<phone>
+<model>1616-I</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1616ua1_3120A.bin</file-name>
+<file-name>hb1616ua1_3120A_SHA256.bin</file-name>
+<file-name>ha1616ua1_3120A.bin</file-name>
+<file-name>ha1616ua1_3120A_SHA256.bin</file-name>
+<file-name>GBM32_B_1_1_0.hex</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>mlf_Sage_v503_hungarian.txt</file-name>
+<file-name>mlf_Sage_v503_czech.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1608-I</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1608ua1_3120A.bin</file-name>
+<file-name>hb1608ua1_3120A_SHA256.bin</file-name>
+<file-name>ha1608ua1_3120A.bin</file-name>
+<file-name>ha1608ua1_3120A_SHA256.bin</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>mlf_Sage_v503_hungarian.txt</file-name>
+<file-name>mlf_Sage_v503_czech.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1603-I</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1603ua1_3120A.bin</file-name>
+<file-name>hb1603ua1_3120A_SHA256.bin</file-name>
+<file-name>ha1603ua1_3120A.bin</file-name>
+<file-name>ha1603ua1_3120A_SHA256.bin</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>mlf_Sage_v503_hungarian.txt</file-name>
+<file-name>mlf_Sage_v503_czech.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1603SW-I</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1603ua1_3120A.bin</file-name>
+<file-name>hb1603ua1_3120A_SHA256.bin</file-name>
+<file-name>ha1603ua1_3120A.bin</file-name>
+<file-name>ha1603ua1_3120A_SHA256.bin</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>mlf_Sage_v503_hungarian.txt</file-name>
+<file-name>mlf_Sage_v503_czech.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1616</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1616ua1_350B.bin</file-name>
+<file-name>ha1616ua1_350B.bin</file-name>
+<file-name>GBM32_B_1_1_0.hex</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1608</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1608ua1_350B.bin</file-name>
+<file-name>ha1608ua1_350B.bin</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1603</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1603ua1_350B.bin</file-name>
+<file-name>ha1603ua1_350B.bin</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+<phone>
+<model>1603SW</model>
+<files>
+<file-name>16xxupgrade.txt</file-name>
+<file-name>hb1603ua1_350B.bin</file-name>
+<file-name>ha1603ua1_350B.bin</file-name>
+<file-name>mlf_Sage_v503_korean.txt</file-name>
+<file-name>KSC_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_chinese.txt</file-name>
+<file-name>GB_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_trad_chinese.txt</file-name>
+<file-name>Big5_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_hebrew.txt</file-name>
+<file-name>Hebrew_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_arabic.txt</file-name>
+<file-name>Arabic_S11_v35.rbm.lzma</file-name>
+<file-name>mlf_Sage_v503_dutch.txt</file-name>
+<file-name>mlf_Sage_v503_french_can.txt</file-name>
+<file-name>mlf_Sage_v503_french_paris.txt</file-name>
+<file-name>mlf_Sage_v503_german.txt</file-name>
+<file-name>mlf_Sage_v503_italian.txt</file-name>
+<file-name>mlf_Sage_v503_japaneseKat.txt</file-name>
+<file-name>mlf_Sage_v503_portuguese.txt</file-name>
+<file-name>mlf_Sage_v503_russian.txt</file-name>
+<file-name>mlf_Sage_v503_spanish.txt</file-name>
+<file-name>mlf_Sage_v503_spanish_latin.txt</file-name>
+<file-name>mlf_Sage_v503_polish.txt</file-name>
+<file-name>mlf_Sage_v503_turkish.txt</file-name>
+<file-name>av_prca_pem_2033.txt</file-name>
+</files>
+</phone>
+</phones>
+</phone-release>

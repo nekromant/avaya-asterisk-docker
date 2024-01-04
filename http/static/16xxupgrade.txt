@@ -1,0 +1,177 @@
+##################################################################
+##                                                           	##
+## AVAYA 16XX H.323 IP TELEPHONE SOFTWARE UPGRADE CONFIGURATION	##
+##              *** February  2, 2018 ***                     	##
+##                                                          	##
+## This file upgrades the following telephones                	##
+## to the indicated releases:                                	##
+##    1616-I                                - Release 1.3SP12 	##
+##    1608-I                                - Release 1.3SP12 	##
+##    1603-I/1603SW-I                       - Release 1.3SP12 	##
+##    1616                                  - Release 1.3SP5 	##
+##    1608                                  - Release 1.3SP5 	##
+##    1603/1603SW                           - Release 1.3SP5 	##
+##                                                           	##
+##################################################################
+##                                                           	##
+## BACKUP APPLICATION VERSION NUMBERS                        	##
+##    1616-I                                - Release 1.3SP12 	##
+##    1608-I                                - Release 1.3SP12 	##
+##    1603-I/1603SW-I                       - Release 1.3SP12 	##
+##    1616                                  - Release 1.3SP5 	##
+##    1608                                  - Release 1.3SP5 	##
+##    1603/1603SW                           - Release 1.3SP5 	##
+##                                                           	##
+##################################################################
+##                                                           	##
+## PHONE APPLICATION VERSION NUMBERS                         	##
+##    1616-I                                - Release 1.3SP12 	##
+##    1608-I                                - Release 1.3SP12 	##
+##    1603-I/1603SW-I                       - Release 1.3SP12 	##
+##    1616                                  - Release 1.3SP5 	##
+##    1608                                  - Release 1.3SP5 	##
+##    1603/1603SW                           - Release 1.3SP5 	##
+##                                                           	##
+##################################################################
+
+IF $SHA2CAPABLE SEQ 1 goto SHA2FILES           
+
+IF $PHONECC SEQ 700415565 goto SHA1BACKUPAPP1616
+IF $PHONECC SEQ 700450190 goto SHA1BACKUPAPP1616
+IF $PHONECC SEQ 700415557 goto SHA1BACKUPAPP1608
+IF $PHONECC SEQ 700415540 goto SHA1BACKUPAPP1603
+IF $PHONECC SEQ 700458508 goto SHA1BACKUPAPP1603
+IF $MODEL4 SEQ 1616 goto SHA1BACKUPAPP1616-I
+IF $MODEL4 SEQ 1608 goto SHA1BACKUPAPP1608-I
+IF $MODEL4 SEQ 1603 goto SHA1BACKUPAPP1603-I
+goto END
+
+# SHA1BACKUPAPP1616-I
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1616ua1_3120A.bin goto SHA1PHONEAPP1616-I
+IF $BOOTNAME SEQ hb1616ua1_3120A_SHA256.bin goto SHA1PHONEAPP1616-I
+SET APPNAME hb1616ua1_3120A.bin
+goto GETSET
+
+# SHA1BACKUPAPP1608-I
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1608ua1_3120A.bin goto SHA1PHONEAPP1608-I
+IF $BOOTNAME SEQ hb1608ua1_3120A_SHA256.bin goto SHA1PHONEAPP1608-I
+SET APPNAME hb1608ua1_3120A.bin
+goto GETSET
+
+# SHA1BACKUPAPP1603-I
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1603ua1_3120A.bin goto SHA1PHONEAPP1603-I
+IF $BOOTNAME SEQ hb1603ua1_3120A_SHA256.bin goto SHA1PHONEAPP1603-I
+SET APPNAME hb1603ua1_3120A.bin
+goto GETSET
+
+# SHA1BACKUPAPP1616
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1616ua1_350B.bin goto SHA1PHONEAPP1616
+SET APPNAME hb1616ua1_350B.bin
+goto GETSET
+
+# SHA1BACKUPAPP1608
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1608ua1_350B.bin goto SHA1PHONEAPP1608
+SET APPNAME hb1608ua1_350B.bin
+goto GETSET
+
+# SHA1BACKUPAPP1603
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1603ua1_350B.bin goto SHA1PHONEAPP1603
+SET APPNAME hb1603ua1_350B.bin
+goto GETSET
+
+# SHA1PHONEAPP1616-I
+
+SET APPNAME ha1616ua1_3120A.bin
+SET BMAPPNAME GBM32_B_1_1_0.hex
+goto GETSET
+
+# SHA1PHONEAPP1608-I
+
+SET APPNAME ha1608ua1_3120A.bin
+goto GETSET
+
+# SHA1PHONEAPP1603-I
+
+SET APPNAME ha1603ua1_3120A.bin
+goto GETSET
+
+# SHA1PHONEAPP1616
+
+SET APPNAME ha1616ua1_350B.bin
+SET BMAPPNAME GBM32_B_1_1_0.hex
+goto GETSET
+
+# SHA1PHONEAPP1608
+
+SET APPNAME ha1608ua1_350B.bin
+goto GETSET
+
+# SHA1PHONEAPP1603
+
+SET APPNAME ha1603ua1_350B.bin
+goto GETSET
+
+# SHA2FILES
+
+IF $MODEL4 SEQ 1616 goto BACKUPAPP1616-I
+IF $MODEL4 SEQ 1608 goto BACKUPAPP1608-I
+IF $MODEL4 SEQ 1603 goto BACKUPAPP1603-I
+goto END
+
+# BACKUPAPP1616-I
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1616ua1_3120A.bin goto PHONEAPP1616-I
+IF $BOOTNAME SEQ hb1616ua1_3120A_SHA256.bin goto PHONEAPP1616-I
+SET APPNAME hb1616ua1_3120A_SHA256.bin
+goto GETSET
+
+# BACKUPAPP1608-I
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1608ua1_3120A.bin goto PHONEAPP1608-I
+IF $BOOTNAME SEQ hb1608ua1_3120A_SHA256.bin goto PHONEAPP1608-I
+SET APPNAME hb1608ua1_3120A_SHA256.bin
+goto GETSET
+
+# BACKUPAPP1603-I
+IF $SIG SEQ 2 goto GETSET
+IF $BOOTNAME SEQ hb1603ua1_3120A.bin goto PHONEAPP1603-I
+IF $BOOTNAME SEQ hb1603ua1_3120A_SHA256.bin goto PHONEAPP1603-I
+SET APPNAME hb1603ua1_3120A_SHA256.bin
+goto GETSET
+
+# PHONEAPP1616-I
+
+IF $APPNAME SEQ ha1616ua1_3120A.bin goto BM32
+IF $APPNAME SEQ ha1616ua1_3120A_SHA256.bin goto BM32
+SET APPNAME ha1616ua1_3120A_SHA256.bin
+
+# BM32
+SET BMAPPNAME GBM32_B_1_1_0.hex
+goto GETSET
+
+# PHONEAPP1608-I
+IF $APPNAME SEQ ha1608ua1_3120A.bin goto GETSET
+IF $APPNAME SEQ ha1608ua1_3120A_SHA256.bin goto GETSET
+SET APPNAME ha1608ua1_3120A_SHA256.bin
+goto GETSET
+
+# PHONEAPP1603-I
+IF $APPNAME SEQ ha1603ua1_3120A.bin goto GETSET
+IF $APPNAME SEQ ha1603ua1_3120A_SHA256.bin goto GETSET
+SET APPNAME ha1603ua1_3120A_SHA256.bin
+goto GETSET
+
+##################################################################
+##           Get additional configuration files              	##
+##################################################################
+
+# GETSET
+GET 46xxsettings.txt
+
+# END
